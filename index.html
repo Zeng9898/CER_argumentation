@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- 受伤图片弹出层 -->
+    <div id="injury-popup" class="hidden">
+        <img src="./hurt.png" alt="Injury" class="injury-image">
+    </div>
+
+    <!-- 聊天容器 -->
     <div id="chat-container">
         <div id="messages"></div>
-        <input type="text" id="message-input" placeholder="輸入訊息" />
+        <input type="text" id="message-input" placeholder="輸入訊息">
         <button onclick="sendMessage()">送出</button>
     </div>
+
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
